@@ -5,7 +5,7 @@ require_relative 'config/environment'
 run Rails.application
 use Rack::Cors do
     allow do
-      origins 'localhost:3000', '192.168.1.148:3000',
+      origins 'localhost:3000', '192.168.1.139:3000',
               /\Ahttp:\/\/192\.168\.0\.\d{1,3}(:\d+)?\z/
               # regular expressions can be used here
   
