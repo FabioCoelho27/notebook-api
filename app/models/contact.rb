@@ -1,14 +1,11 @@
 class Contact < ApplicationRecord
   belongs_to :kind, optional: false
   has_many :phones
-  accepts_nested_attributes_for :phones
+  has_one :address
+  accepts_nested_attributes_for :phones, allow_destroy: true
+  accepts_nested_attributes_for :address, update_only: true
 
-  def as_json(options={})
-    h = super(options)
-    h[:birthdate] = (I18n.l(self.birthdate) unless self.birthdate.blank?)
-    h
-    
-  end
+  
 
   #def to_br
   #  {
