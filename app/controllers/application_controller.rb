@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
-  before_filter :set_headers
+        include DeviseTokenAuth::Concerns::SetUserByToken
+  before_action :set_headers
  
   def set_headers
     response.headers['Content-Type'] = 'application/vnd\.api\+json/'
