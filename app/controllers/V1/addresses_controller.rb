@@ -1,4 +1,5 @@
-class AddressesController < ApplicationController
+module V1
+  class AddressesController < ApplicationController
     before_action :set_contact
     # DELETE /contacts/1/address
     def destroy
@@ -18,11 +19,11 @@ class AddressesController < ApplicationController
     
     # PATCH /contacts/1/address
     def update
-     if @contact.address.update(address_params)
-       render json: @contact.address
-     else
+    if @contact.address.update(address_params)
+      render json: @contact.address
+    else
         render json: @contact.errors, status: :unprocessable_entity
-     end
+    end
     end
 
       # GET /contacts/1/address
@@ -40,3 +41,4 @@ class AddressesController < ApplicationController
       ActiveModelSerializers::Deserialization.jsonapi_parse(params)
     end
   end
+end
