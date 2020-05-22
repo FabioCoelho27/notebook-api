@@ -1,28 +1,23 @@
 {
-	"variables": [],
 	"info": {
+		"_postman_id": "3f1f7228-da92-49c3-94d0-ca0278ee6133",
 		"name": "notebook-api",
-		"_postman_id": "5635b8f1-fe9d-24ed-aca3-4230c284fa82",
-		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://localhost:3000/auth/sign_in",
+			"name": "Login",
 			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
 				"method": "POST",
 				"header": [
 					{
 						"key": "Accept",
 						"value": "application/vnd.api+json",
-						"description": "",
 						"warning": ""
 					},
 					{
 						"key": "Content-Type",
 						"value": "application/json",
-						"description": "",
 						"warning": ""
 					}
 				],
@@ -30,468 +25,53 @@
 					"mode": "raw",
 					"raw": "{\n   \"email\": \"fabio@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
 				},
-				"description": ""
+				"url": {
+					"raw": "http://localhost:3000/auth/sign_in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign_in"
+					]
+				}
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:3000/auth/sign_in",
+			"name": "Create User",
 			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/vnd.api+json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"fabio@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/vnd.api+json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"fabio@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/vnd.api+json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"fabio@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/vnd.api+json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"fabio@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth",
-			"request": {
-				"url": "http://localhost:3000/auth",
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
+						"value": "application/json"
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRsOhYmlvICJ9.Fi2hyOr0ZHhyJ8BfRGClxjlJSleXk8s4XWLT4jRIpxc",
-						"description": ""
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRsOhYmlvICJ9.Fi2hyOr0ZHhyJ8BfRGClxjlJSleXk8s4XWLT4jRIpxc"
 					}
 				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\n   \"email\": \"fabio@coelho.com\",\n   \"password\": \"12345678\",\n   \"password_confirmation\": \"12345678\"\n}"
 				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"gubys@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"gubys@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"gubys@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"gubys@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"gubys@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"gubys@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Authorization",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"gubys@coelho.com\",\n   \"password\": \"12345678\"\n  \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth",
-			"request": {
-				"url": "http://localhost:3000/auth",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Authorization",
-						"value": "",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"gubys@coelho.com\",\n   \"password\": \"12345678\",\n   \"password_confirmatio\": \"12345678\"\n   \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Authorization",
-						"value": "",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"fabio@coelho.com\",\n   \"password\": \"12345678\"\n   \n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth/sign_in",
-			"request": {
-				"url": "http://localhost:3000/auth/sign_in",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": "",
-						"warning": ""
-					},
-					{
-						"key": "Authorization",
-						"value": "",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"fabio@coelho.com\",\n   \"password\": \"12345678\",\n   \"password_confirmation\": \"12345678\"\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth",
-			"request": {
-				"url": "http://localhost:3000/auth",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"type": "text",
-						"name": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					},
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRsOhYmlvICJ9.Fi2hyOr0ZHhyJ8BfRGClxjlJSleXk8s4XWLT4jRIpxc",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"fabio@coelho.com\",\n   \"password\": \"12345678\",\n   \"password_confirmation\": \"12345678\"\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/auth",
-			"request": {
-				"url": "http://localhost:3000/auth",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"type": "text",
-						"name": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					},
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRsOhYmlvICJ9.Fi2hyOr0ZHhyJ8BfRGClxjlJSleXk8s4XWLT4jRIpxc",
-						"description": "",
-						"warning": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n   \"email\": \"fabio@coelho\",\n   \"password\": \"12345678\",\n   \"password_confirmation\": \"12345678\"\n}"
-				},
-				"description": ""
+				"url": {
+					"raw": "http://localhost:3000/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth"
+					]
+				}
 			},
 			"response": []
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
