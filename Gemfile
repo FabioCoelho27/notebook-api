@@ -12,7 +12,7 @@ gem 'rails-i18n', '~>5.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.13'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 4.3'
 gem 'jwt'
 gem 'devise_token_auth'
 gem 'versionist', '~> 1.7'
